@@ -39,7 +39,6 @@ Not avaiable at the moment, it will be in here a future feature.
 - Clone the project to your local machine;
 - `cd` into the project directory;
 - Run `bundle install` to install the necessary gems;
-- Run `rails db:migrate` to create your database columns;
 - Run `rails s` to start a server in your computer;
 - In your browser address, type the following URL: [localhost:3000](localhost:3000);
 - Enjoy the App and its functionalities!
