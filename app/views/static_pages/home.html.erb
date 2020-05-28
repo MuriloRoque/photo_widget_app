@@ -1,0 +1,15 @@
+<h1>Search for the user ID below:</h1>
+<%= form_for("search", method: :get) do |f| %>
+	User Id: <%= f.text_field :id %><p>
+	<%= f.submit "Submit" %>
+<% end %>
+
+<% if @photos %>
+  <div class = "flex">
+    <% @photos.each do |p| %>
+      <div>
+        <img src="<%= "http://farm#{p.farm}.static.flickr.com/#{p.server}/#{p.id}_#{p.secret}_m.jpg" %>">
+      </div>
+    <% end %>
+  </div>
+<% end %>
