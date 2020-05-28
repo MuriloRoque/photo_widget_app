@@ -2,9 +2,7 @@ class StaticPagesController < ApplicationController
   require 'flickraw'
 
   def home
-    unless search_params.nil?
-      @photos = flickr.photos.search(user_id: search_params[:id])
-    end
+    @photos = flickr.photos.search(user_id: search_params[:id]) unless search_params.nil?
   end
 
   private
